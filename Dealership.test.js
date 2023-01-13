@@ -3,7 +3,7 @@ const Dealership = require("./Dealership");
 
 let dealership;
 beforeEach(() => {
-    dealership = new Dealership("Brava Dealers", )
+    dealership = new Dealership("Brava Dealers", 20)
 
     dealership.addCarToStock(new Car("Kia", 2500, "Deisel"));
     dealership.addCarToStock(new Car("Vauxhall", 2000, "Petrol"));
@@ -15,7 +15,7 @@ beforeEach(() => {
 describe("Dealership method tests", () => {
 test ('countNumberOfCars', () => {
     const exp = 5;
-    const act = dealership.noOfCarsInStock;
+    const act = dealership.noOfCarsInStock();
     expect(exp).toBe(act);
 });
 
