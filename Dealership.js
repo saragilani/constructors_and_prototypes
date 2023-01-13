@@ -10,7 +10,7 @@ Dealership.prototype.noOfCarsInStock = function () {
 
 Dealership.prototype.addCarToStock = function (car) {
     if (this.carsInStock.length < this.maxCars){
-    return this.carsInStock.push(car);
+     this.carsInStock.push(car);
     }
 };
 
@@ -18,4 +18,4 @@ Dealership.prototype.getManufacturers = function () {
     return this.carsInStock.map();
 };
 
-module.exports;
+module.exports = Dealership;
